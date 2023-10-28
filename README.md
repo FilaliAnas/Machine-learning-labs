@@ -12,7 +12,7 @@ Ce projet consiste en une application de classification des fleurs Iris à l'aid
 
 L'objectif principal de ce projet est de développer un modèle de classification pour les fleurs Iris en utilisant des algorithmes populaires tels que RandomForest, DecisionTree, K-Nearest Neighbors (KNN) et Support Vector Machine (SVM). Vous pourrez ajuster les paramètres des caractéristiques de la fleur Iris pour observer le fonctionnement de chaque algorithme.
 
-![Fleur Iris](images/iris.jpg)
+![Fleur Iris](/Lab1/Images/iris.jpg)
 
 ## Dataset
 
