@@ -39,7 +39,7 @@ print(iris.target_names[prediction])
 st.title("Iris Flower Classification")
 st.markdown("This app allows you to classify Iris flowers using different algorithms.")
 st.header('Iris flowers classification')
-st.image('images/iris.jpg')
+st.image('Images/iris.jpg')
 st.sidebar.markdown("### Iris Features")
 st.sidebar.markdown("Adjust the sliders to set the sepal and petal measurements for classification.")
 
