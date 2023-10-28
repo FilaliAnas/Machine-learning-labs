@@ -67,5 +67,5 @@ st.subheader('Prediction')
 prediction = model.predict(df)
 st.write(prediction)
 st.write(iris.target_names[prediction])
-st.image('images/'+iris.target_names[prediction][0]+'.jpg')
+st.image('Images/'+iris.target_names[prediction][0]+'.jpg')
 
