@@ -1,4 +1,4 @@
-# iris_classification
+# Iris_classification
 # Classification des fleurs Iris avec scikit-learn
 
 Ce projet consiste en une application de classification des fleurs Iris à l'aide de différents algorithmes d'apprentissage automatique (Machine Learning) et de la bibliothèque scikit-learn. De plus, cette application est déployée en tant qu'interface web interactive grâce à Streamlit.
@@ -23,7 +23,7 @@ Les données utilisées dans ce projet proviennent du jeu de données Iris, disp
 
 Pour exécuter cette application localement, vous devrez installer les bibliothèques Python requises. Vous pouvez le faire en utilisant la commande suivante :
 
-```bash
+
 pip install scikit-learn streamlit pandas
 
 Utilisation
