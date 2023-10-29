@@ -39,9 +39,7 @@ print(iris.target_names[prediction])
 st.title("Iris Flower Classification")
 st.markdown("This app allows you to classify Iris flowers using different algorithms.")
 st.header('Iris flowers classification')
-st.image("Lab1/Images/iris.jpg", caption="Iris Types Caption")
-
-st.image('./Images/iris.jpg')
+st.image("Images/iris.jpg", caption="Iris Types Caption")
 st.sidebar.markdown("### Iris Features")
 st.sidebar.markdown("Adjust the sliders to set the sepal and petal measurements for classification.")
 
@@ -69,7 +67,5 @@ st.subheader('Prediction')
 prediction = model.predict(df)
 st.write(prediction)
 st.write(iris.target_names[prediction])
-st.image('Lab1/Images/'+iris.target_names[prediction][0]+'.jpg', caption="Iris Image Caption")
-
-st.image()
+st.image('Images/'+iris.target_names[prediction][0]+'.jpg', caption="Iris Image Caption")
 
