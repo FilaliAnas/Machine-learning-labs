@@ -4,7 +4,7 @@ from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
+
 import streamlit as st
 import pandas as pd
 
@@ -25,8 +25,7 @@ print(iris.data.shape)
 models = {
     'RandomForest': RandomForestClassifier(),
     'DecisionTree': DecisionTreeClassifier(),
-    'KNN': KNeighborsClassifier(),
-    'SVM': SVC()
+    'KNN': KNeighborsClassifier()
 }
 model = RandomForestClassifier()
 # Step 3: Train
@@ -59,8 +58,8 @@ def user_input():
 
 df = user_input()
 st.write(df)
-selected_model = st.sidebar.selectbox('Select your learning algorithm ',['RandomForest','DecisionTree','KNN','SVN'])
-st.write('selected algorithm is :',selected_model)
+selected_model = st.sidebar.selectbox('Select your learning algorithm ',['RandomForest','DecisionTree','KNN'])
+st.write('selected algorithm is :', selected_model)
 model = models[selected_model]
 model.fit(iris.data, iris.target)
 st.subheader('Prediction')
