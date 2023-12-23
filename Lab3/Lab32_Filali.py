@@ -1,0 +1,15 @@
+from ultralytics import YOLO
+import cv2
+
+model = YOLO('yolov8n.pt')
+video_path = './test.mp4'
+cap = cv2.VideoCapture(video_path)
+ret =True
+while ret:
+    ret,frame = cap.read()
+    if ret:
+        results = model.track(frame,persist=True)
+        frame = results[0].plot()
+        cv2.imshow('frame',frame)
+        if cv2.waitKey(2) & 0xFF == ord('q'):
+             break
